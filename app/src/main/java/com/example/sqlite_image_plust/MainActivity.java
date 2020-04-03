@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     Button btThem;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter_doVat);
         btThem.setOnClickListener((v) -> {
             startActivity(new Intent(MainActivity.this,ThemDoVatActivity.class));
+            Toast.makeText(this,"aaa",Toast.LENGTH_LONG).show();
         });
     }
     @Override
